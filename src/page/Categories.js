@@ -2,8 +2,9 @@ import Header from "./Header";
 function Categories () {
 
     return (
-        <div>
+        <div className='categories'>
             <Header />
+            <button className='check-status'>Check status</button>
         </div>
     );
 }
