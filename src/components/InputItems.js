@@ -36,9 +36,9 @@ function InputItems (props) {
 
     return (
         <form onSubmit={handleSubmit}>
-          <input type="text" value={data.author} name="author" onChange={handleChange} />
-          <input type="text"  value={data.title}  name="title" onChange={handleChange} />
-          <button>submit</button>
+          <input type="text" placeHolder='author' value={data.author} name="author" onChange={handleChange} />
+          <input type="text" placeHolder='title' value={data.title}  name="title" onChange={handleChange} />
+          <button className='submit'>submit</button>
         </form>
     )
 }
