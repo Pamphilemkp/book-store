@@ -1,4 +1,4 @@
-function formHandle () {
+function FormHandle  (props) {
 
 }
-export  default formHandle;
+export  default FormHandle ;
