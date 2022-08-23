@@ -6,8 +6,8 @@ import Categories from './page/Categories';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={Books} />
-      <Route path='/Categories' element={Categories} />
+      <Route path='/' element={<Books />} />
+      <Route path='/Categories' element={<Categories />} />
     </Routes>
   );
 }
