@@ -1,7 +1,7 @@
 import Header from "./Header";
 import { useState } from "react";
 import InputItems from "../components/InputItems";
-import ItemsList from "../components/ItemsList";
+import ItemsList from "../components/itemsList";
 // import FormHandle from '../components/formHandle'
 
 function Books() {
