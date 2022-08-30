@@ -21,7 +21,7 @@ function InputItems(props) {
     if (data.author.trim() && data.title.trim()) {
       props.handleChange(
         {
-          id: uuid,
+          id: uuid(),
           author: data.author,
           title: data.title,
         },
@@ -36,8 +36,8 @@ function InputItems(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeHolder="author" value={data.author} name="author" onChange={handleChange} />
-      <input type="text" placeHolder="title" value={data.title} name="title" onChange={handleChange} />
+      <input type="text" placeholder="author" value={data.author} name="author" onChange={handleChange} />
+      <input type="text" placeholder="title" value={data.title} name="title" onChange={handleChange} />
       <button className="submit">submit</button>
     </form>
   );

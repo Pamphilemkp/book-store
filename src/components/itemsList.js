@@ -11,7 +11,7 @@ function ItemsList(props) {
             :
             <span>{data.title}</span>
           </p>
-          <button>delete</button>
+          <button onClick={() => props.bookRemove(data.id)}>delete</button>
         </li>
       ))}
     </ul>
