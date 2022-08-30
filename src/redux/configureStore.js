@@ -1,10 +1,10 @@
-import { combinedReducers, ConfigureStore } from "@testing-library/react";
-import bookReducer from "./books/books";
-import categoriesReducer from "./categories/categories";
+import { combinedReducers, ConfigureStore } from '@testing-library/react';
+import bookReducer from './books/books';
+import categoriesReducer from './categories/categories';
 
 const rootReducer = combinedReducers({
-    bookReducer,
-    categoriesReducer,
+  bookReducer,
+  categoriesReducer,
 });
 
 const store = ConfigureStore(rootReducer);
