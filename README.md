@@ -3,7 +3,7 @@
 
 # Book store
 
-Simple simulated library where a user can add books invluding the tiles, authors and also the categories to the library and can be able to check the progression of the state.
+Simple simulated library where a user can add books including the tiles, authors and  the categories to the library and can be able to check the progression of the books added.
 
 
 ## Built With
