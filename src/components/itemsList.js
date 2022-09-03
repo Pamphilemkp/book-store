@@ -22,20 +22,20 @@ function ItemsList(props) {
             </div>
           </div>
 
-          <div className="progress-bar">
-            <div style={{ width: 100, height: 100 }}>
+          <div className="progress-container">
+            <div className="progress-bar">
               <CircularProgressbar value={percentage} styles={buildStyles({ pathColor: '#379cf6', trailColor: 'rgb(177, 174, 174)' })} />
-            </div>
-            <div>
-              <p>
-                {`${percentage}%`}
-                {' '}
-                <br />
-                <span className="low-color">Completed</span>
-              </p>
+              <div>
+                <p>
+                  {`${percentage}%`}
+                  {' '}
+                  <br />
+                  <span className="low-color">Completed</span>
+                </p>
+              </div>
             </div>
 
-            <div>
+            <div className="chapters">
               <p className="low-color">Chapter</p>
               <p>Preriquisty</p>
               <button className="progress-color" width="11.5rem">Update progress</button>

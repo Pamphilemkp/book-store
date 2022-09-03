@@ -40,8 +40,8 @@ function InputItems(props) {
     <form onSubmit={handleSubmit}>
       <h2>ADD NEW BOOK</h2>
       <div className="inputs">
+        <input type="text" placeholder="title" value={data.title} name="title" onChange={handleChange} className="input-title" />
         <input type="text" placeholder="author" value={data.author} name="author" onChange={handleChange} />
-        <input type="text" placeholder="title" value={data.title} name="title" onChange={handleChange} />
         <select name="category" className="select-category" onChange={handleChange}>
           <option value="Biography">Biography</option>
           <option value="Fiction">Fiction</option>
@@ -59,8 +59,8 @@ function InputItems(props) {
           <option value="Coding">Coding</option>
           <option value="Other">Other</option>
         </select>
+        <button className="submit">Add book</button>
       </div>
-      <button className="submit">Add book</button>
     </form>
   );
 }
