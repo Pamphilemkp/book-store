@@ -16,7 +16,7 @@ Simple simulated library where a user can add books including the tiles, authors
 
 ## Live Demo 
 
-[Live Demo Link](pamphilemkp-bookstore.netlify.app)
+[Live Demo Link](https://pamphilemkp-bookstore.netlify.app/)
 
 
 ## To get a local copy up and running:
@@ -51,7 +51,7 @@ You may also see any lint errors in the console.
 
 ### Deployment
 
-[See project here](pamphilemkp-bookstore.netlify.app)
+[See project here](https://pamphilemkp-bookstore.netlify.app/)
 
 ### APP DEMO
 ![Computer](./App_screenShot/Screenshot%20(68).png)
