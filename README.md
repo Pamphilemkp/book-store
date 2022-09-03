@@ -3,20 +3,20 @@
 
 # Book store
 
-Simple simulated library where a user can add books invluding the tiles, authors and also the categories to the library and can be able to check the progression of the state.
+Simple simulated library where a user can add books including the tiles, authors and  the categories to the library and can be able to check the progression of the books added.
 
 
 ## Built With
 
 - HTML
 - CSS
-- JAVASCRIPT (MODULES)
 - React with JSX
 - REDUX
+- API
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link]()
+[Live Demo Link](https://pamphilemkp-bookstore.netlify.app/)
 
 
 ## To get a local copy up and running:
@@ -51,7 +51,12 @@ You may also see any lint errors in the console.
 
 ### Deployment
 
-[See project here]()
+[See project here](https://pamphilemkp-bookstore.netlify.app/)
+
+### APP DEMO
+![Computer](./App_screenShot/Screenshot%20(68).png)
+![Mobile](./App_screenShot/Screenshot%20(67).png)
+
 
 ## Authors
 

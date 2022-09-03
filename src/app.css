@@ -1,28 +1,61 @@
-
+/* @import url(Mont); */
 .container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+  padding: 0 0 30px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
+  background-color: #fff;
+  color: black;
+  height: 5.875rem;
+  width: 100vw;
+  padding: 1.813rem 0;
+}
+
+.nav {
   display: flex;
   gap: 30px;
   align-items: center;
-  color: black;
+  margin-left: 6.25rem;
 }
 
 .list {
+  width: 100vw;
   padding: 0;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  border-radius: 4px;
+}
+
+.Bookstore-cms {
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
 }
 
 .list-items {
   list-style: none;
   display: flex;
-  gap: 20px;
-  align-items: center;
+  margin: 2.313rem;
+  margin-left: 6.25rem;
+  padding: 30px;
+  border-radius: 4px;
+  width: 70vw;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
 }
 
 .categories {
@@ -31,25 +64,166 @@
   gap: 20px;
 }
 
-.check-status {
-  width: 100px;
-}
-
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+  padding: 20px 20px 20px 0;
   justify-content: center;
+  width: 70vw;
+  margin-left: 6.25rem;
 }
 
 input {
-  width: 15vw;
+  width: 25rem;
 }
 
 .submit {
-  width: 7vw;
+  width: 150px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  background-color: #0290ff;
+  border-radius: 4px;
 }
 
 .select-category {
-  width: 15vw;
+  width: 17.813rem;
+  background-color: #fff;
+  outline: solid 1px rgb(109, 105, 105);
+  border: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.data-elememts {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.data-elememts p {
+  height: 1.188rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.data-title {
+  margin: 0;
+  padding: 0;
+}
+
+.buttons button,
+.buttons span {
+  border: none;
+  outline: none;
+  width: 4.563rem;
+  height: 1.188rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.inputs {
+  display: flex;
+  gap: 40px;
+  width: 70vw;
+  justify-content: space-between;
+}
+
+.input-title {
+  width: 45.5rem;
+}
+
+.book-link,
+.category-link {
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.category-link {
+  color: rgb(109, 105, 105);
+}
+
+.progress-bar {
+  width: 13vw;
+  display: flex;
+  gap: 30px;
+}
+
+.low-color {
+  color: rgb(160, 156, 156);
+}
+
+.progress-color {
+  width: 150px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  background-color: #0290ff;
+  border-radius: 4px;
+  border: 0;
+  outline-color: wheat;
+}
+
+.chapters {
+  width: 25vw;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+@media only  screen and (max-width: 768px) {
+  .container {
+    padding-top: 0;
+    padding-left: 30px;
+  }
+
+  .Bookstore-cms {
+    margin-right: 0;
+  }
+
+  .list-items {
+    margin-left: 0;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .select-category {
+    width: 24vw;
+  }
 }

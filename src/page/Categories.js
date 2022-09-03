@@ -14,7 +14,7 @@ function Categories() {
     <div className="categories">
       <Header />
       <h2>{categoriesReducer}</h2>
-      <button className="check-status" onClick={displayStatus}>Check status</button>
+      <button className="check-status progress-color" onClick={displayStatus}>Check status</button>
     </div>
   );
 }

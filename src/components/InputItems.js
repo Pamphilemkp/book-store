@@ -38,24 +38,29 @@ function InputItems(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="author" value={data.author} name="author" onChange={handleChange} />
-      <input type="text" placeholder="title" value={data.title} name="title" onChange={handleChange} />
-      <select name="category" className="select-category" onChange={handleChange}>
-        <option value="Biography">Biography</option>
-        <option value="Fiction">Fiction</option>
-        <option value="Romance novel">Romance novel</option>
-        <option value="Spirituality">Spirituality</option>
-        <option value="Horror">Horror</option>
-        <option value="Poetry">Poetry</option>
-        <option value="Business">Business</option>
-        <option value="Cookbook">Cookbook</option>
-        <option value="Philosophy">Philosophy</option>
-        <option value="Short story">Short story</option>
-        <option value="Misery">Misery</option>
-        <option value="Science">Science</option>
-        <option value="Avanture">Avanture</option>
-      </select>
-      <button className="submit">submit</button>
+      <h2>ADD NEW BOOK</h2>
+      <div className="inputs">
+        <input type="text" placeholder="title" value={data.title} name="title" onChange={handleChange} className="input-title" />
+        <input type="text" placeholder="author" value={data.author} name="author" onChange={handleChange} />
+        <select name="category" className="select-category" onChange={handleChange}>
+          <option value="Biography">Biography</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Romance novel">Romance novel</option>
+          <option value="Spirituality">Spirituality</option>
+          <option value="Horror">Horror</option>
+          <option value="Poetry">Poetry</option>
+          <option value="Business">Business</option>
+          <option value="Cookbook">Cookbook</option>
+          <option value="Philosophy">Philosophy</option>
+          <option value="Short story">Short story</option>
+          <option value="Misery">Misery</option>
+          <option value="Science">Science</option>
+          <option value="Avanture">Avanture</option>
+          <option value="Coding">Coding</option>
+          <option value="Other">Other</option>
+        </select>
+        <button className="submit">Add book</button>
+      </div>
     </form>
   );
 }
