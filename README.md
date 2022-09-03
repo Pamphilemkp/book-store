@@ -10,9 +10,9 @@ Simple simulated library where a user can add books invluding the tiles, authors
 
 - HTML
 - CSS
-- JAVASCRIPT (MODULES)
 - React with JSX
 - REDUX
+- API
 
 ## Live Demo (if available)
 
@@ -52,6 +52,11 @@ You may also see any lint errors in the console.
 ### Deployment
 
 [See project here]()
+
+### APP DEMO
+![Computer](./App_screenShot/Screenshot%20(68).png)
+![Mobile](./App_screenShot/Screenshot%20(67).png)
+
 
 ## Authors
 
