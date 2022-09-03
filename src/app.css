@@ -49,3 +49,7 @@ input {
 .submit {
   width: 7vw;
 }
+
+.select-category {
+  width: 15vw;
+}

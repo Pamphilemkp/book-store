@@ -11,10 +11,9 @@ function ItemsList(props) {
           <p>
             {data.author}
             :
-            <span>{data.title}</span>
-            { }
-            <span>{data.category}</span>
           </p>
+          <span>{data.title}</span>
+          <span>{data.category}</span>
           <button onClick={() => props.bookRemove(data.item_id)}>delete</button>
         </li>
       ))}

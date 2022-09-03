@@ -18,7 +18,7 @@ export default function bookReducer(state = initialState, action = {}) {
       return [...state, action.payload];
 
     case `${REMOVE_BOOK}/fulfilled`:
-      return state.filter((book) => book.item_id !== action.item_id);
+      return state.filter((book) => book.item_id !== action.payload);
 
     case `${GET_API_DATA}/fulfilled`:
       return action.payload;
@@ -37,15 +37,15 @@ export const addBook = createAsyncThunk(ADD_BOOK, async (payload) => {
   return payload;
 });
 
-export const removeBook = createAsyncThunk(REMOVE_BOOK, async (item_id) => {
+export const removeBook = createAsyncThunk(REMOVE_BOOK, async (id) => {
   const options = {
     method: 'DELETE',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ item_id }),
+    body: JSON.stringify({ item_id: id }),
   };
 
-  await fetch(`${apiURl}/${item_id}`, options);
-  return item_id;
+  await fetch(`${apiURl}/${id}`, options);
+  return id;
 });
 
 export const fetchData = createAsyncThunk(GET_API_DATA, async () => {
