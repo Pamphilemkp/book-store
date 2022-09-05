@@ -207,8 +207,7 @@ input {
 
 @media only  screen and (max-width: 768px) {
   .container {
-    padding-top: 0;
-    padding-left: 30px;
+    padding: 10px;
   }
 
   .Bookstore-cms {
@@ -225,5 +224,25 @@ input {
 
   .select-category {
     width: 24vw;
+  }
+
+  form {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input,
+  .input-title {
+    width: 15rem;
+  }
+
+  .nav {
+    width: 0;
+    margin-left: 0;
   }
 }
